@@ -94,3 +94,40 @@ PUT se utiliza para actualizar o reemplazar un recurso, mientras que PATCH se ut
 
 Usaría PATCH, porque solamente necesito modificar el campo title y no modificar el resto de los datos del recurso
 
+
+Tarea 10: Encuentra el límite
+
+Después responde: ¿cómo se llama ese tipo de caso de prueba? ¿Por qué se dice que los
+defectos se concentran ahí?
+
+ID más alto con respuesta 200: 100
+Primer ID con respuesta 404: 101
+
+¿Cómo se llama ese tipo de caso de prueba?
+Análisis de Valores Límite
+
+¿Por qué se dice que los defectos se concentran ahí?
+Se dice que los defectos se concentran en los límites porque los desarrolladores suelen cometer errores frecuentes al implementar las condiciones lógicas de los rangos (por ejemplo, confundir operadores como estrictamente menor < con menor o igual <=).
+
+Tarea 11: Explora otros recursos y rutas anidadas
+
+JSONPlaceholder tiene más recursos además de /posts. Descúbrelos y prueba al
+menos dos que no hayamos usado.
+
+Recursos Adicionales Explorados (/todos y /users)
+
+/todos: Al consultar este recurso la API devuelve un arreglo de tareas pendientes en formato JSON
+/users: Al consultar este endpoint la respuesta entrega los perfiles de los usuarios del sistema
+
+Rutas Anidadas (/posts/1/comments)
+
+Al realizar la petición GET a el servidor responde con un código 200 OK y devuelve únicamente los comentarios vinculados de forma directa al post con ID
+
+Deducción de la estructura de la ruta anidada:
+
+¿Cómo funciona? 
+
+La URL funciona como una jerarquía de carpetas. Primero indicamos el elemento principal (/posts/1) y luego el subelemento que queremos ver de ese elemento (/comments).
+
+
+
