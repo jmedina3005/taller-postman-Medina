@@ -1,8 +1,11 @@
 # taller-postman-Medina
 
 Estudiante: Juan David Medina Correa
+
 Código: 1114151459
+
 Asignatura: Ingeniería de Software II — Cotecnova
+
 
 Marco Conceptual
 https://www.redhat.com/es/topics/api/what-is-a-rest-api
